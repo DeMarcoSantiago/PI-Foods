@@ -1,9 +1,26 @@
 const { API_KEY } = process.env;
 const axios = require("axios");
 const { Recipe, Diet } = require("../db");
-const burgur = require("../img if err accur/burguer.png")
 
-const apiURL = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=100`)
+
+const getRecipesApi = async () => {
+	const responseApi = await axios.get(
+		`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=100`
+	);
+
+	return responseApi.data.results.map((x) => {
+		return {
+			id: x.id,
+			title: x.title,
+			summary: x.summary,
+			healthScore: x.healthScore,
+			steps: x.steps,
+			image:
+				x.image,
+			diets: x.diets.map((y) => y),
+		};
+	});
+};
 
 const getRecipesDb = async () => {
 	const res = await Recipe.findAll({
@@ -24,23 +41,6 @@ const getRecipesDb = async () => {
 		};
 	});
 };
-const getApiRecipes = await apiURL.data.results.map(element => {
-    return{
-        id: element.id,
-        image: element.image|| "fallo la imagen",
-        DietTypes: element.diets,
-        summary: element.summary,
-        score: element.spoonacularScore,
-        healthScore: element.healthScore,
-        dishTypes: element.dishTypes,
-        steps: e.analyzedInstructions[0]?.steps.map(eelement => {
-            return{
-                number: eelement.number,
-                step: eelement.step,
-            }
-        })
-    }
-})
 
 const getRecipeByIDinBoth = async (id) => {
 	if(isNaN(id)){
@@ -62,3 +62,4 @@ const getRecipeByIDinBoth = async (id) => {
 	}
 }
 
+module.exports = { getRecipesApi, getRecipesDb, getRecipeByIDinBoth };

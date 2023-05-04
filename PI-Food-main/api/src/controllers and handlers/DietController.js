@@ -1,6 +1,6 @@
 const { default: axios } = require("axios");
 const { Diet } = require("../db");
-const { getRecipesApi } = require("./recipesController");
+const { getRecipesApi } = require("./RecipeControllers");
 
 const getDietsTypesApi = async () => {
   const recipesApi = await getRecipesApi();
@@ -31,4 +31,4 @@ const postDiets = async () => {
     Promise.all(allDietTypes).then((e) => console.log("Dietas Cargadas"));
   };
 
-  module.exports = { getDietsTypesDb, getDietsTypesApi, postDiets,getDietsHandler  };
+  module.exports = { getDietsTypesDb, getDietsTypesApi, postDiets,};
