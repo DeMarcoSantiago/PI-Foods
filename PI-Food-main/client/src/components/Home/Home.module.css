@@ -1,0 +1,56 @@
+.home {
+	min-height: 100vh;
+}
+
+.home .container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 0 !important;
+}
+
+.headerHome {
+	background: url("./../../image/background_header.jpg");
+	background-position: 0 50%;
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.home .container h2 {
+	font-family: "Playfair Display", serif;
+}
+
+.title {
+	font-size: 3em;
+	line-height: 0.8em;
+	color: white;
+}
+
+@media (max-width: 900px) {
+	.title {
+		font-size: 2em;
+		padding: 15px 0;
+	}
+
+	.home .container {
+		padding: 0% 10%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.headerHome {
+		background-size: 200%;
+		background-position: -170px;
+	}
+
+	.headerHome h2 {
+		width: 70%;
+	}
+}

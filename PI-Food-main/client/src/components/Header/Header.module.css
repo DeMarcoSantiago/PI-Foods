@@ -1,0 +1,45 @@
+.header {
+	background: rgba(255, 255, 255, 0);
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.header > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 70px;
+}
+
+.tituloHeader {
+	color: white;
+	border: 4px solid white;
+	border-radius: 1em;
+	padding: 10px 40px;
+	font-size: 10px;
+	background-color: rgba(0, 0, 0, 0.615);
+	backdrop-filter: blur(2px);
+	font-family: "Varela Round", sans-serif !important;
+}
+
+@media (max-width: 900px) {
+	h1 {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 600px) {
+	.tituloHeader {
+		color: white;
+		border: 3px solid white;
+		border-radius: 1em;
+		padding: 10px 20px;
+		font-size: 10px;
+		font-family: "Varela Round", sans-serif !important;
+	}
+	h1 {
+		font-size: 14px;
+	}
+}

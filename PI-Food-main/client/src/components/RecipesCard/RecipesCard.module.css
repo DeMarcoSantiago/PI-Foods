@@ -1,0 +1,78 @@
+.recipesCard {
+	display: flex;
+	flex-direction: column;
+	border-radius: 50px;
+	background: linear-gradient(145deg, #23292d4b, #2a313653);
+	backdrop-filter: blur(5px);
+	border-radius: 1.5em;
+	color: white;
+	font-family: "Varela Round", sans-serif !important;
+	width: 250px;
+	min-height: 400px;
+	gap: 1em;
+	padding: 25px 20px;
+	border: 1px solid rgb(67, 67, 67);
+	text-align: start;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+	box-shadow: 0px 12px 31px -7px rgba(0, 0, 0, 1);
+	-webkit-box-shadow: 0px 12px 31px -7px rgba(0, 0, 0, 1);
+}
+
+.recipesCard:hover {
+	transform: scale(103%);
+	backdrop-filter: none;
+}
+
+.recipesCard img {
+	width: 210px;
+	height: 210px;
+	object-fit: cover;
+	box-shadow: 20px 20px 60px #12171b, -20px -20px 60px #161b1f;
+	border-radius: 200px;
+}
+
+.cardInfo h2 {
+	font-family: "Varela Round", sans-serif !important;
+	font-size: 18px;
+}
+.cardInfo {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.healthScore {
+	display: flex;
+	background: #00852a;
+	width: 100%;
+	padding: 0.2em 0.4em;
+	border-radius: 0.4em;
+	background: #00852a;
+	box-shadow: inset 5px 5px 8px #005d1d, inset -5px -5px 8px #00ad37;
+}
+
+.dietsContainer p {
+	display: flex;
+	gap: 0.3em;
+	width: 100%;
+	flex-flow: row wrap;
+}
+
+.dietsContainer span {
+	overflow: hidden;
+	transition: all 0.5s ease-in-out;
+	position: relative;
+	z-index: 99;
+	font-size: 0.85em;
+	padding: 0.4em 0.6em;
+	border-radius: 0.4em;
+	background-color: #283037 !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.dietsContainer:hover {
+	height: auto;
+}

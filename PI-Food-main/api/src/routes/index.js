@@ -7,8 +7,8 @@ const RecipeRouter = require('./RecipeRoute');
 
 const router = Router();
 
-router.use("/Diets", DietRouter)
-router.use("/Recipes", RecipeRouter)
+router.use("/diets", DietRouter)
+router.use("/recipes", RecipeRouter)
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 

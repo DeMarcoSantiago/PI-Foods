@@ -1,0 +1,27 @@
+.nav {
+	color: white;
+}
+
+.btn {
+	background-image: linear-gradient(109.6deg, #f55b22 40%, #f9351a 70%);
+	border-radius: 0.3em;
+	color: white;
+	padding: 8px 25px;
+	font-family: "Varela Round", sans-serif !important;
+	font-size: 1.1em;
+}
+
+@media (max-width: 900px) {
+	.btn {
+		padding: 5px 15px;
+		font-size: 1em;
+	}
+}
+
+
+@media (max-width: 600px){
+	.btn {
+		padding: 10px 15px;
+		font-size: 1em;
+	}
+}

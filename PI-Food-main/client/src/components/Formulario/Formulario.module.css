@@ -1,0 +1,146 @@
+.formHeader {
+	background: url("./../../image/recipe_detail_bg.webp");
+	background-position: 0 50%;
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.formHeader h2 {
+	font-family: "Playfair Display", serif;
+	font-size: 3em;
+	line-height: 0.8em;
+	color: white;
+}
+
+.formContainer {
+	background: url("../../image/form_bg.jpg");
+	background-size: cover;
+	display: flex;
+	min-height: calc(100vh - 300px);
+}
+
+.formulario {
+	margin: 100px auto auto auto;
+	display: flex;
+	flex-direction: column;
+	padding: 100px;
+	gap: 30px;
+	background: linear-gradient(145deg, #23292d4b, #2a313653);
+	backdrop-filter: blur(5px);
+	border-radius: 20px;
+	color: white;
+	border: 1px solid rgba(93, 93, 93, 0.289);
+}
+
+.formulario input {
+	width: 100%;
+	color: white;
+}
+
+.inputResumen {
+	display: flex;
+	flex-direction: column;
+}
+
+.inputDietas label {
+	display: flex;
+	text-align: start;
+	align-items: center;
+	gap: 1em;
+	font-size: 18px;
+}
+
+.inputDietas label input {
+	width: 15px;
+	height: 15px;
+	color: white;
+}
+
+label {
+	font-family: "Varela Round", sans-serif !important;
+	font-size: 1.5em;
+}
+
+textarea {
+	height: 300px;
+	border: none;
+	border-radius: 15px;
+	background-color: #0000009a !important;
+	box-shadow: inset 1px 1px 1px #181c20, inset -1px -1px 1px #38444e;
+	resize: none;
+	padding: 15px;
+	font-size: 1.2em;
+	color: white;
+	font-family: "Varela Round", sans-serif !important;
+	margin: 10px 0;
+	outline: none;
+}
+
+input {
+	height: 45px;
+	border: none;
+	border-radius: 15px;
+	background-color: #0000009a !important;
+	box-shadow: inset 1px 1px 1px #181c20, inset -1px -1px 1px #38444e;
+
+	padding: 15px;
+	font-size: 1.2em;
+	color: white !important;
+	font-family: "Varela Round", sans-serif !important;
+	margin: 10px 0;
+	outline: none;
+}
+
+.inputCheck {
+	border-radius: 100px;
+}
+
+.inputTitle {
+	font-family: "Varela Round", sans-serif !important;
+	font-size: 1.4em;
+	font-weight: normal;
+}
+
+.inputDietas {
+	width: 100%;
+}
+
+.inputDietas > label {
+	font-size: 1.4em;
+	justify-content: center;
+	text-align: center;
+	font-family: "Varela Round", sans-serif !important;
+	width: 100% !important;
+}
+
+.textoDieta {
+	font-size: 0em !important;
+}
+
+.buttonForm {
+	height: 25px;
+	border: none;
+	border-radius: 0.5em;
+	background-image: linear-gradient(109.6deg, #f55b22 40%, #f9351a 70%);
+	padding: 20px;
+	font-size: 1.2em;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Varela Round", sans-serif !important;
+	margin: 10px 0;
+	outline: none;
+	cursor: pointer;
+}
+
+.buttonForm:disabled {
+	background: #283037;
+	box-shadow: inset 3px 3px 1px #181c20, inset -3px -3px 1px #38444e;
+	cursor: inherit;
+	color: rgba(255, 255, 255, 0.129);
+}
