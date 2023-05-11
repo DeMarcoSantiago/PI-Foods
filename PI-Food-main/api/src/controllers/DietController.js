@@ -91,5 +91,9 @@ const getRecipeById = async (id) => {
 	// 		: await Recipe.findByPk(id);
 	// return source === "api" ? recipe.data : recipe;
 };
+const getDietsHandler = async (req, res) => {
+  res.send(await getDietsTypesDb());
+};
 
-module.exports = { getRecipesApi, getRecipesDb, getRecipeById };
+
+module.exports = { getRecipesApi, getRecipesDb, getRecipeById, getDietsHandler };

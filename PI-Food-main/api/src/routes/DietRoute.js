@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { getDietsHandler } = require("../handlers/DietHandler");
+const {getDietsHandler}  = require("../controllers/DietController");
 
 const dietsRouter = Router();
 
