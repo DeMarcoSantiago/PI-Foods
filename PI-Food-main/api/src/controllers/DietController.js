@@ -82,14 +82,6 @@ const getRecipeById = async (id) => {
 	}
 
 	return await Recipe.findByPk(id);
-
-	// recipe =
-	// 	source === "api"
-	// 		? await axios.get(
-	// 				`https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY}&number=100`
-	// 		  )
-	// 		: await Recipe.findByPk(id);
-	// return source === "api" ? recipe.data : recipe;
 };
 const getDietsHandler = async (req, res) => {
   res.send(await getDietsTypesDb());
