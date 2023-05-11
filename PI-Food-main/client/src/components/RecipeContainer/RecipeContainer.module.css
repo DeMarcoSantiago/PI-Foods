@@ -1,6 +1,6 @@
 .recipesSection {
 	background: rgb(36, 36, 36);
-	background: url("../../image/recipe_detail_bg.webp");
+	background: url("../../image/recipe_detail_bg.jpg");
 	background-position: 100%;
 	background-size: cover;
 	width: 100%;
@@ -207,7 +207,7 @@
 	background: linear-gradient(
 		180deg,
 		rgb(6, 6, 6) 0%,
-		rgba(19, 19, 19, 0.7) 100%
+		rgba(19, 19, 19, 0.7) 40%
 	);
 	position: absolute;
 }

@@ -11,14 +11,28 @@
 }
 
 .headerHome {
+	background: rgb(36, 36, 36);
 	background: url("./../../image/background_header.jpg");
-	background-position: 0 50%;
-	background-size: cover;
+	background-position: 0 20%;
+	
 	width: 100%;
-	height: 300px;
+	height: 150px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.overlay {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgb(0, 0, 0);
+	background: linear-gradient(
+		180deg,
+		rgb(6, 6, 6) 0%,
+		rgba(19, 19, 19, 0.7) 3%
+	);
+	position: absolute;
 }
 
 .home .container h2 {
@@ -26,9 +40,9 @@
 }
 
 .title {
-	font-size: 3em;
+	font-size: 4em;
 	line-height: 0.8em;
-	color: white;
+	color: #363537;
 }
 
 @media (max-width: 900px) {

@@ -10,8 +10,8 @@ export default function Landing() {
 		<div className={styles.landing}>
 			<div className={styles.container}>
 				<h2>
-					Simple and <br />
-					Tasty Recipes
+					Tasty and <br />
+					Beautiful Recipes
 				</h2>
 				<p>
 					Proyecto individual realizado para <img src={henry} alt="" />
