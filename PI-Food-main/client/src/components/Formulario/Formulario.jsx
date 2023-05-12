@@ -102,7 +102,7 @@ export default function Formulario() {
 
 	function submitHandler(e) {
 		e.preventDefault();
-		axios.post("http://localhost:3001/recipes", form).then((res) => alert(res));
+		axios.post("https://pi-foods-webserver.onrender.com/recipes", form).then((res) => alert(res));
 	}
 
 	return (

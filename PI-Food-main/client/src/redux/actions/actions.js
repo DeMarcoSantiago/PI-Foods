@@ -10,7 +10,7 @@ export const GET_DIETS = "GET_DIETS";
 export const FILTER_DIET = "FILTER_DIET";
 
 export const getAllRecipes = () => async (dispatch) => {
-	await axios.get("http://localhost:3001/recipes").then((response) => {
+	await axios.get("https://pi-foods-webserver.onrender.com/recipes").then((response) => {
 		dispatch({
 			type: GET_ALL_RECIPES,
 			payload: response.data,
@@ -21,7 +21,7 @@ export const getAllRecipes = () => async (dispatch) => {
 export const getRecipeByName = (name) => async (dispatch) => {
 
 	await axios
-		.get(`http://localhost:3001/recipes?name=${name}`)
+		.get(`https://pi-foods-webserver.onrender.com/recipes?name=${name}`)
 		.then((response) => {
 			dispatch({
 				type: GET_RECIPE_BY_NAME,
@@ -50,7 +50,7 @@ export function sort(orden) {
 
 export const getRecipesDetail = (id) => async (dispatch) => {
 	await axios
-		.get(`http://localhost:3001/recipes/${id}`)
+		.get(`https://pi-foods-webserver.onrender.com/recipes/${id}`)
 		.then((response) =>
 			dispatch({
 				type: GET_RECIPES_DETAIL,
@@ -61,7 +61,7 @@ export const getRecipesDetail = (id) => async (dispatch) => {
 };
 
 export const getDiets = () => async (dispatch) => {
-	await axios.get("http://localhost:3001/diets").then((response) => {
+	await axios.get("https://pi-foods-webserver.onrender.com/diets").then((response) => {
 		dispatch({
 			type: GET_DIETS,
 			payload: response.data,
