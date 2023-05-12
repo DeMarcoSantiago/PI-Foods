@@ -25,7 +25,9 @@ export default function RecipeDetail() {
 
 	return (
 		<div className={styles.detailSection}>
-			<div className={styles.overlay}></div>
+			<div className={styles.overlay}>
+			</div>
+
 
 			<div className={styles.detailHeader}>
 				<h2>{recipesDetail.title}</h2>
