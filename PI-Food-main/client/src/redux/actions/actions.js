@@ -21,7 +21,7 @@ export const getAllRecipes = () => async (dispatch) => {
 export const getRecipeByName = (name) => async (dispatch) => {
 
 	await axios
-		.get(`pi-foods-production-9b32.up.railway.app/recipes?name=${name}`)
+		.get(`https://pi-foods-webserver.onrender.com/recipes?name=${name}`)
 		.then((response) => {
 			dispatch({
 				type: GET_RECIPE_BY_NAME,
